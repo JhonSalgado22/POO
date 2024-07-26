@@ -1,0 +1,57 @@
+@startuml
+interface Personal{
++checarEntrada()
++trabajar()
++horaComida()
++cobrar()
++checarSalida()
+}
+
+class Persona implements Personal{
+
+  -nombre: String
+  -altura: short
+  -edad: short
+  -sueldo: double
+  -trabajando: boolean
+
+
+ +getNombre()
+ +mostrarNombre()
+ +SetNombre()
+ +trabajar()
+ +cobrar()
+ +checar()
+}
+
+class Comerciante {
+-trabajando: boolean
++trabajar()
++cobrar()
++alimentarce()
++checar()
+
+}
+
+class Construtor{
+ +getNombre()
+ +mostrarNombre()
+ +SetNombre()
+ +trabajar()
+ +cobrar()
+ +checar()
+}
+class Jardinero{
+ +getNombre()
+ +mostrarNombre()
+ +SetNombre()
+ +trabajar()
+ +cobrar()
+ +checar()
+}
+
+
+Personal <|-- Comerciante
+Personal <|-- Constructor
+Personal <|-- Jardinero
+@enduml
