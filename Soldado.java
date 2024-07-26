@@ -1,5 +1,6 @@
 package cuh.com.mx;
 public class Soldado implements Trabajador {
+    //creamos varioables con metodos de acceso
     private String nombre;
     private short altura;
     private short edad;
@@ -17,7 +18,7 @@ public class Soldado implements Trabajador {
     public String getNombre() {
         return "Sr." + nombre;
     }
-
+//Hice los get y set de los atrobutos
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
