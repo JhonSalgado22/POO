@@ -5,7 +5,7 @@ public class Panadero implements Trabajador {
     private short edad;
     private double sueldo;
     private boolean trabajando;
-
+//creacion del constructor panadero
     public Panadero(String nombre, short altura, short edad, double sueldo) {
         this.nombre = nombre;
         this.altura = altura;
